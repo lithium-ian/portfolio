@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <meta charset="UTF-8">
+
+	<link rel="icon" type="image/png" href="profilepic.png">
+
+    <link rel="stylesheet" href="myprofile.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <a href="MyProfile.html">Home</a>
+        <a href="#">About Me</a>
+    </div>
+
+    <div class="nav-right">
+        <button id="themeBtn" class="nav-btn">Dark Mode</button>
+    </div>
+</header>
+
+<section id="main-content">
+<table cellpadding="20">
+<tr>
+
+<td valign="top">
+<div id="left-column">
+
+    <img class="img" src="profilepic.png" alt="Profile Image"><br><br>
+    <h2>Ramirez, Ian Miguel</h2>
+
+    <span class="job-title" id="jobTitle">Web Developer, Student</span><br>
+    <button id="editJobBtn">Edit Job Title</button>
+
+</div>
+
+<hr>
+
+<div class="contact">
+    <h3>Contact</h3>
+    <p>Email: ramirezimc@students.nu-fairview.edu.ph</p>
+    <p>Number: 09123456789</p>
+</div>
+
+<hr>
+
+<button id="toggleSkillsBtn">Hide Skills</button>
+
+<div class="skills" id="skillsSection">
+    <h3>Skills</h3>
+    <dl>
+        <dt>Frontend</dt>
+        <dd>HTML</dd>
+        <dd>CSS</dd>
+        <dd>JavaScript</dd>
+
+        <dt>Others</dt>
+        <dd>Sketching</dd>
+        <dd>Editing</dd>
+    </dl>
+</div>
+</td>
+
+<td valign="top">
+<div id="right-column">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Ian Miguel Ramirez, a sophomore at National University Fairview, studying BAchelor of Science in Information Technology. Study WebProg with me and learn how to become a web developer!
+    </p>
+</div>
+
+<hr>
+
+<div>
+<h2>Message Me</h2>
+
+<form>
+    <p>
+        Name:<br>
+        <input type="text" id="nameField">
+    </p>
+
+    <p>
+        Email:<br>
+        <input type="email" id="emailField">
+    </p>
+
+    <p>
+        Message:<br>
+        <textarea id="msgBox" maxlength="200"></textarea>
+    </p>
+
+    <p>Characters left: <span id="counter">200</span></p>
+
+    <p>
+        <input type="submit" value="Send" onclick="return validateForm()">
+    </p>
+</form>
+</div>
+
+<hr>
+
+<h2>Experiences and Achievements</h2>
+<p>
+    With Honors in SHS<br>
+    Dean's Lister
+</p>
+
+</td>
+</tr>
+</table>
+</section>
+
+<h3 id="greeting"></h3>
+<p id="dateDisplay"></p>
+
+
+<div class="footer">
+    <p><strong>WebProg - Web Programming 2025</strong></p>
+</div>
+
+</body>
+</html>
